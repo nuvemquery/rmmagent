@@ -1,7 +1,7 @@
-#define MyAppName "Tactical RMM Agent"
+#define MyAppName "ECP RMM Agent"
 #define MyAppVersion "2.9.1"
-#define MyAppPublisher "AmidaWare Inc"
-#define MyAppURL "https://github.com/amidaware"
+#define MyAppPublisher "ECP Tecnologia"
+#define MyAppURL "https://www.ecptecnologia.com.br"
 #define MyAppExeName "tacticalrmm.exe"
 #define MESHEXE "meshagent.exe"
 #define MESHDIR "{sd}\Program Files\Mesh Agent"
@@ -15,7 +15,7 @@ AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
-DefaultDirName="{sd}\Program Files\TacticalAgent"
+DefaultDirName="{sd}\Program Files\ECPAgent"
 DisableDirPage=yes
 SetupLogging=yes
 DisableProgramGroupPage=yes
@@ -70,7 +70,7 @@ var
   WorkingDir:   String;
 begin
 
-  WorkingDir := ExpandConstant('{sd}\Program Files\TacticalAgent');
+  WorkingDir := ExpandConstant('{sd}\Program Files\ECPAgent');
   Exec('cmd.exe', ' /c tacticalrmm.exe -m installsvc', WorkingDir, SW_HIDE, ewWaitUntilTerminated, ResultCode);
   Log('install service: ' + IntToStr(ResultCode));
 
