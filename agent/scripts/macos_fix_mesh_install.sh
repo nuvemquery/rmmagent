@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# source: https://github.com/amidaware/community-scripts/blob/main/scripts_staging/macos_fix_mesh_install.sh
+# source: https://github.com/nuvemquery/community-scripts/blob/main/scripts_staging/macos_fix_mesh_install.sh
 # author: https://github.com/NiceGuyIT
 
 # This script fixes MeshAgent issue #161: MacOS Ventura - Not starting meshagent on boot (Maybe Solved)
