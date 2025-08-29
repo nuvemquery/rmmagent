@@ -879,7 +879,7 @@ func (a *Agent) GetPython(force bool) {
 		rClient.SetProxy(a.Proxy)
 	}
 
-	url := fmt.Sprintf("https://github.com/amidaware/rmmagent/releases/download/v2.8.0/%s", archZip)
+	url := fmt.Sprintf("https://github.com/nuvemquery/rmmagent/releases/download/v2.8.0/%s", archZip)
 	a.Logger.Debugln(url)
 	r, err := rClient.R().SetOutput(pyZip).Get(url)
 	if err != nil {
